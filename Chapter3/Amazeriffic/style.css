@@ -22,7 +22,7 @@ header {
 header div.container h1{
    
    
-    font-weight: 400;
+    font-weight: 500;
     font-size: 3.0em;
     font-style: italic;
     color: rgb(195, 39, 39);
@@ -80,12 +80,14 @@ main .left h2{
 
 main .left p {
     padding: 10pt 0pt 10pt 0pt;
+    line-height: 1.2em;
+    
 }
 
 main .left h3{
     margin-top: 25pt;
     font-size: 1.35em;
-    font-weight: 500;
+    font-weight: 600;
 }
 
 main .right {
