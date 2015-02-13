@@ -13,8 +13,28 @@ header .container, main .container, footer .container {
 
 header {
   background: white;
-  overflow: auto;
+  overflow: auto;   
+    padding: 20pt 50pt 30pt 50pt;
+     font-family: 'Ubuntu', sans-serif;
 }
+
+
+header div.container h1{
+   
+   
+    font-weight: 400;
+    font-size: 3.0em;
+    font-style: italic;
+    color: rgb(195, 39, 39);
+    
+}
+
+header div.container nav a:link{
+color: red;
+    text-decoration: none;
+    margin:0pt 1pt 0pt 1pt;
+}
+
 
 header h1 {
   float: left;
@@ -22,18 +42,50 @@ header h1 {
 }
 
 header nav {
+    
   float: right;
   width: 285px;
 }
 
+header nav {
+    text-align: right;
+  
+}
+hr{
+   
+    border-color:rgba(249, 244, 244, 0.24);
+}
 main {
   background: white;
-  overflow: auto;
+  overflow: hidden;
+  font-family: 'Droid Sans', sans-serif;
+}
+
+hr{
+    color:red;
 }
 
 main .left {
   float: left;
   width: 570px;
+    
+}
+
+main .left h2{
+    margin-top:30pt;
+ font-weight: 700;
+    font-size: 2.05em;
+    
+}
+
+main .left p {
+    padding: 10pt 0pt 10pt 0pt;
+}
+
+main .left h3{
+    margin-top: 25pt;
+    font-size: 1.35em;
+    font-weight: 500;
 }
 
 main .right {
@@ -41,12 +93,64 @@ main .right {
   width: 285px;
 }
 
+main .right img{
+    margin-left: 80pt;
+    margin-bottom: 20pt;
+    width: 130pt;
+    height:220pt;
+}
+
+footer {
+    font-family: 'Droid Sans', sans-serif;
+}
 footer .left {
   float: left;
   width: 570px;
 }
 
+footer .left .contact{
+    margin: 20pt 0pt 20pt 0pt;
+}
+
+footer .left .contact h5{
+     
+    
+    font-weight: 700;
+    margin-bottom: 20pt;
+}
+footer .left .contact p{
+    margin-bottom: 5pt;
+}
+footer .contact :nth-child(2){
+     color: rgb(195, 39, 39);
+   
+    font-weight: 600;
+    font-style: italic;
+}
 footer .sitemap {
   float: right;
   width: 285px;
+    margin: 20pt 0pt 20pt 0pt;
+}
+footer .sitemap h5{
+    font-weight: 700;
+    margin-bottom: 20pt;
+}
+
+
+footer .sitemap .left{
+    float: left;
+    width: 100pt;
+
+}
+footer .sitemap .left a,.right a{
+    text-decoration:none;
+    
+}
+footer .sitemap .left li, .right li{
+margin-bottom: 5pt;
+}
+footer .sitemap .right{
+    float:right;
+    width:100pt;
 }
