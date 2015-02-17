@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang='en'>
+    <head>
+        <meta charset='utf-8'>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Nudge - Web Interface for Git Push</title>
+    <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+
+        <!-- Optional theme -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+
+        <script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
+<script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+        <!-- Latest compiled and minified JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+        <link rel='stylesheet' href='style.css' type='text/css'>
+    </head>
+    <body>
+        
+            <div class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+                
+                    <a href="#" class="navbar-brand">Nudge - Web Interface for Git Push</a>
+                    
+                
+                </div>
+            </div>
+        </div>
+      
+         <div class="container">
+             
+                 <div class="row">
+                     <div class="col-lg-12">
+                         <div class="bs-docs-section clearfix">
+                         <div class="page-header">
+                             <h2 id="container">Git Status</h2>
+                         </div>
+                         <div class="status_div">
+                            <pre>
+                            <p>On branch master 
+                            Your branch is up-to-date with 'origin/master'.
+
+                            Changes not staged for commit:
+                            (use "git add &lt;file&gt;..." to update what will be committed)
+                            (use "git checkout -- <file/>..." to discard changes in working directory)
+
+                            modified:   nudge.js
+
+                            no changes added to commit (use "git add" and/or "git commit -a")
+                            </p></pre>
+                        </div>
+                     </div>
+                </div>
+            </div>
+        </div>  
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="bs-docs-section clearfix">
+                        <div class="page-header">
+                            <h3 id="container">Update!</h3>
+                        </div>
+                       
+                        <div class="bs-example" data-example-id="basic-forms">
+                            <form class="well form-inline">
+                                <div class="form-group">
+                                    <label for="branch_select">Branch</label>
+                                    <select class="form-control" id='branch_select' name='branch'>
+                                        <option value='master'>master</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for='remote_select'>Remote</label>
+                                    <select class="form-control" id='remote_select' name='remote'>
+                                        <option value='origin'>origin</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                <button type="submit" class="btn btn-default"><span class="glyphicon glyphiucon-thumbs-up" area-hidden="true"></span>Push</button>
+                                </div>
+                            </form>
+                </div>
+                       
+               </div>
+           
+                </div>
+            </div>
+              </div>
+           
+       
+    </body>
+</html>

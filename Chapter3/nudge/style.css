@@ -1,0 +1,19 @@
+/*---------html--------------*/
+
+
+
+
+/*---------header------------*/
+/*--------body---------------*/
+body{
+    padding-top: 40pt;
+}
+.form-inline .form-control{
+    width: 200pt;
+    margin-right:20pt;
+    margin-left:5pt;
+}
+form button{
+width: 100pt;
+}
+/*--------footer-------------*/
