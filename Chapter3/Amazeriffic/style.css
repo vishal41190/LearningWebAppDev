@@ -156,3 +156,31 @@ footer .sitemap .right{
     float:right;
     width:100pt;
 }
+
+
+/*--------------faq.html-----------*/
+
+main ul.faq-ul {
+    margin-top: 20pt;
+    margin-bottom: 20pt;
+  /*  list-style-image: url(lightbulb.png);*/
+    
+}
+
+main ul.faq-ul li{
+    margin-top:10pt;
+    
+    
+}
+main .faq-question {
+    font-weight: 800;
+}
+main .faq-answer{
+    margin-left: 17pt;
+}
+main .faq-question .li-lightbulb {
+    content:url(lightbulb.png);
+    height: 10pt;
+    width: 7pt;
+    margin-right: 10pt;
+}

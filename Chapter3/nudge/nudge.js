@@ -30,9 +30,7 @@ function beginPage(res, title) {
     
     res.write("<link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css'> ");
     res.write("<link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css'> ");
-    res.write(" <script src='//code.jquery.com/jquery-1.11.2.min.js'></script>");
-   res.write(" <script src='//code.jquery.com/jquery-migrate-1.2.1.min.js'></script>");
-    res.write("<script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js'></script>");
+
 
     res.write("<link rel='stylesheet' href='style.css' type='text/css'>\n");
     res.write("</head>\n");
@@ -96,7 +94,7 @@ function endForm(res) {
      res.write("<div class='form-group'>");
     res.write("<button type='submit' value='Push' class='btn btn-default'><span class='glyphicon glyphiucon-thumbs-up' area-hidden='true'></span>Push</button>");
     res.write("</div>");
-    //res.write("<input type='submit' value='Push'>\n");
+    
     res.write("</form>\n");
     res.write("</div>");
     res.write("</div>");
@@ -113,9 +111,7 @@ function beginSelect(res, what) {
     res.write("<div class='form-group " + what + "_div '>");
     res.write("<label for='" + what + "_select'>" + capitalize(what) + " </label>");
     res.write("<select class='form-control' id='" + what +"_select' name='" + what + "'>");
-   // res.write("<div class='" + what + "_div'>\n");
-    //res.write("<label for='" + what + "_select'>" + capitalize(what) + "</label>\n");
-    //res.write("<select id='" + what + "_select' name='" + what + "'>\n");
+   
 }
 
 function writeOption(res, option) {
