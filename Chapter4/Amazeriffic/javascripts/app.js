@@ -5,7 +5,8 @@ var main = function () {
                  "Answer emails",
                  "Take Gracie to the park",
                  "Finish writing this book"];
-
+   
+    
     $(".tabs a span").toArray().forEach(function (element) {
         var $element = $(element);
 
