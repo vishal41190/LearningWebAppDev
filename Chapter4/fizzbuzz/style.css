@@ -1,0 +1,23 @@
+body {
+background: linen;
+width: 900px;
+margin: 50px auto;
+}
+div {
+border: 1px solid maroon;
+text-align: center;
+padding: 5px;
+margin: 15px;
+}
+h1 {
+    text-align: center;
+}
+h2
+{
+color:red;
+}
+section
+{
+text-align: left;
+color: blue;
+}

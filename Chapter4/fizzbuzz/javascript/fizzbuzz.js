@@ -24,20 +24,20 @@ var main = function(){
     for(num = 1; num <=100; num++){
         if(isMultipleOf3(num)){
             if(isMultipleOf5(num)){
-                $(".fizzbuzz1").append("FizzBuzz, ");
+                $(".fizzbuzz1").append("FizzBuzz ");
                 
             }
             else{
-                $(".fizzbuzz1").append("Fizz, ");
+                $(".fizzbuzz1").append("Fizz ");
           
             }
         }
         else if(isMultipleOf5(num)){
-            $(".fizzbuzz1").append("Buzz, ");
+            $(".fizzbuzz1").append("Buzz ");
             
         }
         else{
-            $(".fizzbuzz1").append(num+", ");
+            $(".fizzbuzz1").append(num+" ");
             
         }
        
@@ -49,20 +49,20 @@ var main = function(){
         for(num=start; num<=end; num++){
            if(isMultipleOf3(num)){
             if(isMultipleOf5(num)){
-                $(".fizzbuzz2").append("FizzBuzz, ");
+                $(".fizzbuzz2").append("FizzBuzz ");
                 
             }
             else{
-                $(".fizzbuzz2").append("Fizz, ");
+                $(".fizzbuzz2").append("Fizz ");
            
             }
         }
         else if(isMultipleOf5(num)){
-            $(".fizzbuzz2").append("Buzz, ");
+            $(".fizzbuzz2").append("Buzz ");
 
         }
         else{
-            $(".fizzbuzz2").append(num+", ");
+            $(".fizzbuzz2").append(num+" ");
             
         }
         }
@@ -75,20 +75,20 @@ var main = function(){
             num=arr[i];
            if(isMultipleOf3(num)){
             if(isMultipleOf5(num)){
-                $(".fizzbuzz3").append("FizzBuzz, ");
+                $(".fizzbuzz3").append("FizzBuzz ");
                
             }
             else{
-                $(".fizzbuzz3").append("Fizz, ");
+                $(".fizzbuzz3").append("Fizz ");
           
             }
         }
         else if(isMultipleOf5(num)){
-            $(".fizzbuzz3").append("Buzz, ");
+            $(".fizzbuzz3").append("Buzz ");
            
         }
         else{
-            $(".fizzbuzz3").append(num+", ");
+            $(".fizzbuzz3").append(num+" ");
             
         }
         }
@@ -101,20 +101,20 @@ var main = function(){
     for(num = 1; num <=100; num++){
         if(isMultipleOf3(num)){
             if(isMultipleOf5(num)){
-                $(".fizzbuzz4").append(obj.divisibleByThree+obj.divisibleByFive+", ");
+                $(".fizzbuzz4").append(obj.divisibleByThree+obj.divisibleByFive+" ");
               
             }
             else{
-                $(".fizzbuzz4").append(obj.divisibleByThree+", ");
+                $(".fizzbuzz4").append(obj.divisibleByThree+" ");
          
             }
         }
         else if(isMultipleOf5(num)){
-            $(".fizzbuzz4").append(obj.divisibleByFive+", ");
+            $(".fizzbuzz4").append(obj.divisibleByFive+" ");
            
         }
         else{
-            $(".fizzbuzz4").append(num+", ");
+            $(".fizzbuzz4").append(num+" ");
            
         }
        
@@ -130,20 +130,20 @@ var main = function(){
    
         if(isMultipleOf3(num)){
             if(isMultipleOf5(num)){
-                $(".fizzbuzz5").append(obj.divisibleByThree+obj.divisibleByFive+", ");
+                $(".fizzbuzz5").append(obj.divisibleByThree+obj.divisibleByFive+" ");
                
             }
             else{
-                $(".fizzbuzz5").append(obj.divisibleByThree+", ");
+                $(".fizzbuzz5").append(obj.divisibleByThree+" ");
           
             }
         }
         else if(isMultipleOf5(num)){
-            $(".fizzbuzz5").append(obj.divisibleByFive+", ");
+            $(".fizzbuzz5").append(obj.divisibleByFive+" ");
             
         }
         else{
-            $(".fizzbuzz5").append(num+", ");
+            $(".fizzbuzz5").append(num+" ");
                 
         }
        

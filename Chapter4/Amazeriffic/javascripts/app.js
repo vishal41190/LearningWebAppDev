@@ -1,10 +1,13 @@
+
 var main = function () {
+    "use strict";
     var toDos = ["Get groceries",
                  "Make up some new ToDos",
                  "Prep for Monday's class",
                  "Answer emails",
                  "Take Gracie to the park",
                  "Finish writing this book"];
+  
    
     
     $(".tabs a span").toArray().forEach(function (element) {
@@ -25,7 +28,7 @@ var main = function () {
                 // newest first, so we have to go through
                 // the array backwards
                 $content = $("<ul>");
-                for (i = toDos.length-1; i >= 0; i--) {
+                for (i = toDos.length - 1; i >= 0; i--) {
                     $content.append($("<li>").text(toDos[i]));
                 }
             } else if ($element.parent().is(":nth-child(2)")) {
@@ -36,9 +39,9 @@ var main = function () {
                 });
             } else if ($element.parent().is(":nth-child(3)")) {
                 // input a new to-do
-                $input = $("<input>"),
+                $input = $("<input>");
                 $button = $("<button>").text("+");
-
+								
                 $button.on("click", function () {
                     if ($input.val() !== "") {
                         toDos.push($input.val());
@@ -49,6 +52,28 @@ var main = function () {
                 $content = $("<div>").append($input).append($button);
                /* Alternatively append() allows multiple arguments so the above
                 can be done with $content = $("<div>").append($input, $button); */
+            } else if ($element.parent().is(":nth-child(4)")) {
+               
+                $content = $("<div class='slideshow'>");
+                $content.append("<a class='picture' href='pictures/screenshot1.png'><img src='pictures/screenshot1.png' title='Screen Shot1'/> </a>");
+                $content.append("<a class='picture' href='pictures/screenshot2.png'><img src='pictures/screenshot2.png' title='Screen Shot1'/> </a>");
+                $content.append("<a class='picture' href='pictures/screenshot3.png'><img src='pictures/screenshot3.png' title='Screen Shot1'/> </a>");
+                $content.append("<a class='picture' href='pictures/screenshot4.png'><img src='pictures/screenshot4.png' title='Screen Shot1'/> </a>");
+                /* Due to following line page will run only on server. Not directly as file
+                Need CDN for js to run it as local file.
+                Used following reference to find the way to load external javascript inside javascript
+                http://stackoverflow.com/questions/18261214/load-external-js-file-in-another-js-file */
+                $.getScript("javascripts/jquery.colorbox.js", function () {
+                    
+                     
+                    $(".picture").colorbox({
+                        rel: "group1",
+                        width: "70%",
+                        height: "70%"
+       
+                    });
+                });
+        
             }
 
             $("main .content").append($content);
@@ -56,8 +81,9 @@ var main = function () {
             return false;
         });
     });
-
+    
     $(".tabs a:first-child span").trigger("click");
+   
 };
 
 $(document).ready(main);

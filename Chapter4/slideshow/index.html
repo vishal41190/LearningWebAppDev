@@ -1,17 +1,27 @@
 <!doctype html>
 <html>
-    <header>
+    <head>
         <title>Slide Show</title>
-    </header>
-    <body>
-        <main>
-            <a class="picture" href="pictures/screenshot1.png">ScreenShot1</a>
-             <a class="picture" href="pictures/screenshot2.png">ScreenShot2</a>
-             <a class="picture" href="pictures/screenshot3.png">ScreenShot3</a>
-             <a class="picture" href="pictures/screenshot4.png">ScreenShot4</a>
-        </main>
-         <script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
+        <link href="colorbox.css" rel="stylesheet" type="text/css">
+        <link href="style.css" rel="stylesheet" type="text/css">
+        <script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
         <script src="javascript/jquery.colorbox.js"></script>
         <script src="javascript/slideshow.js"></script>
+    </head>
+    <body>
+ 
+        <main>
+            <h1>SLIDESHOW</h1> 
+               
+            <div class="slideshow">
+                <a class="picture" href="pictures/screenshot1.png"><img src="pictures/screenshot1.png" alt="Screen Shot1" title="Screen Shot1"/> </a>
+                <a class="picture" href="pictures/screenshot2.png"><img src="pictures/screenshot2.png" alt="Screen Shot2" title="Screen Shot 2"/></a>
+                <a class="picture" href="pictures/screenshot3.png"><img src="pictures/screenshot3.png" alt="Screen Shot3" title="Screen Shot 3"/></a>
+                <a class="picture" href="pictures/screenshot4.png"><img src="pictures/screenshot4.png" alt="Screen Shot4" title="Screen Shot 4"/></a>
+            </div>  
+            
+            <h3>Click on Image to start slideshow. </h3>
+        </main>
+         
     </body>
 </html> 

@@ -1,0 +1,20 @@
+body {
+margin: 50pt auto;
+}
+div.slideshow {
+margin:50pt auto auto 200pt;
+}
+
+h1 {
+    text-align: center;
+    color:red;
+}
+h3 {
+    text-align: center;
+    color: red;
+}
+a.picture img{
+    width: 140pt;
+    height: 100pt;
+}
+

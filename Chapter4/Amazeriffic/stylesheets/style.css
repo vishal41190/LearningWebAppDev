@@ -47,6 +47,11 @@ a {
   font-weight: bold;
 }
 
+a.picture img{
+    width: 140pt;
+    height: 100pt;
+}
+
 main {
     background: #fff;
     border-radius: 0 5px 5px 5px;;
@@ -56,7 +61,7 @@ main {
 .tabs a span {
     border-radius: 5px 5px 0 0;
     display: inline-block;
-    width: 100px;
+    width: 120px;
     margin-right: 10px;
     text-align: center;
     background: #ddd;
