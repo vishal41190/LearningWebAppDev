@@ -59,24 +59,17 @@ var main = function () {
                 $content.append("<a class='picture' href='pictures/screenshot2.png'><img src='pictures/screenshot2.png' title='Screen Shot1'/> </a>");
                 $content.append("<a class='picture' href='pictures/screenshot3.png'><img src='pictures/screenshot3.png' title='Screen Shot1'/> </a>");
                 $content.append("<a class='picture' href='pictures/screenshot4.png'><img src='pictures/screenshot4.png' title='Screen Shot1'/> </a>");
-                /* Due to following line page will run only on server. Not directly as file
-                Need CDN for js to run it as local file.
-                Used following reference to find the way to load external javascript inside javascript
-                http://stackoverflow.com/questions/18261214/load-external-js-file-in-another-js-file */
-                $.getScript("javascripts/jquery.colorbox.js", function () {
-                    
-                     
-                    $(".picture").colorbox({
-                        rel: "group1",
-                        width: "70%",
-                        height: "70%"
-       
-                    });
-                });
         
             }
 
             $("main .content").append($content);
+            
+            $(".picture").colorbox({
+                rel: "group1",
+                width: "70%",
+                height: "70%"
+       
+            });
 
             return false;
         });
